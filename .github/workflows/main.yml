@@ -12,9 +12,9 @@ jobs:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://drive.google.com/uc?id=1SqMUE8nOzpQ32xD1LsRUTAcH8mbpvOzJ -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/kuserahkanasalbahagiadankayaterpandang/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/kuserahkanasalbahagiadankayaterpandang/main/wallpaper.jpg -OutFile wallpaper.jpg
-        Invoke-WebRequest https://raw.githubusercontent.com/kuserahkanasalbahagiadankayaterpandang/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/harihasusni/kuserahkanasalbahagiadankayaterpandang/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/harihasusni/kuserahkanasalbahagiadankayaterpandang/main/wallpaper.jpg -OutFile wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/harihasusni/kuserahkanasalbahagiadankayaterpandang/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Mengekstrasi berkas Ngrok.
       run: Expand-Archive ngrok.zip
     - name: Terhubung Ke Akun Ngrok.
@@ -34,5 +34,5 @@ jobs:
       run: cmd /c start.bat
     - name: Selamat, Berhasil Dibuat! Anda Bisa Menutup Tab Sekarang.
       run: | 
-        Invoke-WebRequest https://github.com/kuserahkanasalbahagiadankayaterpandang/raw/main/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://github.com/harihasusni/kuserahkanasalbahagiadankayaterpandang/raw/main/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
